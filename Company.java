@@ -14,6 +14,16 @@ public class Company {
         employees[4] = new Worker("Nikola Pająk", 20000, "Specjalista");
         employees[5] = new Manager("Jan Szerman", 7000, 0);
         employees[6] = new Worker("Julia Maj", 6000, "Magazynier");
+
+
+        int nonManagerCount = 0;
+         for (Employee employee : employees) {
+             if (!(employee instanceof Manager)) {
+                 nonManagerCount++;
+             }
+         }
+         ((Manager) employees[0]).setNumberOfSubordinates(nonManagerCount);
+         employees[0].setSalary(17000);
         
         
         for (Employee employee : employees) {
