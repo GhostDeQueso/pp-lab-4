@@ -22,14 +22,13 @@ public class Company {
                  nonManagerCount++;
              }
          }
-         ((Manager) employees[0]).setNumberOfSubordinates(nonManagerCount);
          employees[0].setSalary(17000);
         
         
         for (Employee employee : employees) {
             employee.setSalary(employee.getSalary() + 500);
             if (employee instanceof Manager) {
-                ((Manager) employee).setNumberOfSubordinates(2); 
+                ((Manager) employee).setNumberOfSubordinates(nonManagerCount); 
                 employee.setSalary(7500); 
             }
         }
