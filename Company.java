@@ -8,13 +8,13 @@ public class Company {
         employees[3] = new Employee("Maciek Aulich", 7000);
         employees[4] = new Employee("Nikola Pająk", 20000);
 
-        System.out.println("Dane dla pracownika o indeksie 3:");
+        System.out.println("Paracownik o indeksie 3:");
         System.out.println(employees[3]);
 
         employees[3].setSalary(10000);
 
         
-        System.out.println("\nDane dla wszystkich pracowników:");
+        System.out.println("\nWszyscy pracowników:");
         for (Employee employee : employees) {
             System.out.println(employee);
         }
