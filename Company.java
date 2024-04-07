@@ -8,10 +8,10 @@ public class Company {
 
         
         employees[0] = new Manager("Mateusz Ryngiewicz", 10000, 0);
-        employees[1] = new Worker("Szymon Ryngiewicz", 120000, "Deweloper");
+        employees[1] = new Worker("Szymon Ryngiewicz", 120000, "CEO");
         employees[2] = new Employee("Małgoarzata Ryngiewicz", 14000);
-        employees[3] = new Worker("Maciek Aulich", 7000, "Księgowy");
-        employees[4] = new Worker("Nikola Pająk", 20000, "Menedżer marketingu");
+        employees[3] = new Worker("Maciek Aulich", 7000, "Programista");
+        employees[4] = new Worker("Nikola Pająk", 20000, "Specjalista");
 
         
         System.out.println("Wszyscy pracownicy:");
